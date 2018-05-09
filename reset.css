@@ -155,7 +155,7 @@ button:focus{
     height: 88px;
     /* border: 1px solid red; */
     text-align: center;
-    line-height: 88px;
+     /* line-height: 88px; */
     float: left;
 }
 .art{
@@ -202,4 +202,18 @@ button:focus{
 }
 .public-container button a{
     color: #fff;
+}
+.idea a img{
+    /* border: 1px solid red; */
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.right .art a img{
+    width: 25px;
+    display: block;
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    margin-left: 42px;
+    margin-bottom: 6px;
 }
