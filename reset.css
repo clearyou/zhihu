@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(246, 246, 246);
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    font-size: 15px;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+    display: block;
+    /* float: left; */
+    color: black;
+}
+.public-container>a{
+    /* border: 1px solid red; */
+    background-image: url(知乎.png);
+    background-size: cover;/*这里就是利用这个属性让图片根据自己设置的大小来覆盖，
+    现在设置的是50px，那么图片就不会超出这个，如果使用img标签的话图片就会根据自身的大小显示，即使设置宽高也是没用的*/
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-top: 5px;
+    float: left;
+    
+}
+.public-container{
+    /* border: 1px solid blue; */
+    width: 1060px;
+    
+    /* background: #fff; */
+    margin: 0 auto;
+}
+.public-header{
+    background: #fff;
+    height: 52px;
+}
+.nav{
+    /* border: 1px solid red; */
+    float: left;
+    margin-right: 40px;
+    margin-left: 27px;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 165px;
+    margin-top: 15px;
+}
+.nav a{
+    color: #999;
+    float: left;
+}
+.searchbox{
+    float: left;
+    margin-top: 10px;
+    height: 34px;
+    width: 326px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    background: #f6f6f6;
+    padding: 4px 10px;
+    transition:width 2s;
+    
+}
+
+input{
+    background: #f6f6f6;
+    border: none;
+    color: #1a1a1a;
+    outline: none;
+    font-size: 16px;    
+    height: 24px;
+    line-height: 24px;
+    
+    
+
+}
+.input:focus .searchbox{
+    width: 430px;
+}
+input:hover{
+    outline: none;
+}
+button{
+    width: 58px;
+    height: 34px;
+    color: #fff;
+    background-color: #0084ff;
+    padding: 0 14px;
+    margin-left: 16px;
+    border: 1px solid;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+button:focus{
+    outline: none;
+    cursor: pointer;
+}
+.search{
+    float: right;
+    margin-right: 0px;
+    background-image: url(搜索.png) ;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+}
+.left{
+    height: 58px;
+    width: 694px;
+    float: left;
+    /* background: blue; */
+    
+}
+.right{
+    float: right;
+    margin-left: 10px;
+    
+    width: 336px;
+    /* height: 175px; */
+}
+.neirong{
+    margin-top: 10px;
+}
+.idea{
+    background: #fff;
+    /* border: 1px solid red; */
+
+}
+.idea a{
+    display: block;
+    /* width: 56px; */
+    /* height: 56px; */
+    /* border: 1px solid red; */
+    line-height: 58px;
+    margin-left: 40px;
+    color: black;
+    float: left;
+}
+.left .last {
+    float:right;
+    margin-right:10px;
+}
+.art a{
+    width: 112px;
+    height: 88px;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 88px;
+    float: left;
+}
+.art{
+    background: #fff;
+}
+.art-two{
+    padding-top: 20px;
+    background: #fff;
+    border: 1px solid bule;
+    margin-top: 10px;
+    width: 336px;
+    height: 296px;
+}
+
+.art-two ul li{
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+.idea-two{
+    overflow: hidden;
+    padding-top: 10px;
+    padding-right: 15px;
+    width:694px;
+    height: 406px;
+    background: #fff; 
+    margin-top: 10px;
+}
+.idea-two p ,h4{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.idea-two :first-child{
+    color: #999;
+}
+.idea-two :last-child{
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    line-height: 1.5em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+.public-container button a{
+    color: #fff;
+}
